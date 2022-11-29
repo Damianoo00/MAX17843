@@ -480,13 +480,79 @@ namespace max17843
         void set_TOPCELL(uint16_t);
     };
 
-    class CellRegister : public Register
+    class CellRegister1 : public Register
     {
     public:
         CellRegister(const uint16_t address) : Register(address) {}
 
         uint16_t get_CELLn();
         void set_CELLn(uint16_t);
+    };
+
+    class CellRegister2 : public CellRegister1
+    {
+    public:
+        CellRegister2(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister3 : public CellRegister1
+    {
+    public:
+        CellRegister3(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister4 : public CellRegister1
+    {
+    public:
+        CellRegister4(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister5 : public CellRegister1
+    {
+    public:
+        CellRegister5(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister6 : public CellRegister1
+    {
+    public:
+        CellRegister6(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister7 : public CellRegister1
+    {
+    public:
+        CellRegister7(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister8 : public CellRegister1
+    {
+    public:
+        CellRegister8(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister9 : public CellRegister1
+    {
+    public:
+        CellRegister9(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister10 : public CellRegister1
+    {
+    public:
+        CellRegister10(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister11 : public CellRegister1
+    {
+    public:
+        CellRegister11(const uint16_t address) : CellRegister1(address) {}
+    };
+
+    class CellRegister12 : public CellRegister1
+    {
+    public:
+        CellRegister12(const uint16_t address) : CellRegister1(address) {}
     };
 
     class VblockRegister : public Register
