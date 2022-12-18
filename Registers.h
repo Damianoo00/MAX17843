@@ -483,7 +483,7 @@ namespace max17843
     class CellRegister1 : public Register
     {
     public:
-        CellRegister(const uint16_t address) : Register(address) {}
+        CellRegister1(const uint16_t address) : Register(address) {}
 
         uint16_t get_CELLn();
         void set_CELLn(uint16_t);
