@@ -940,11 +940,11 @@ namespace max17843
     {
         set(0, 4, bitField);
     }
-    uint16_t CellRegister::get_CELLn()
+    uint16_t CellRegister1::get_CELLn()
     {
         return get(0, 16);
     }
-    void CellRegister::set_CELLn(uint16_t bitField)
+    void CellRegister1::set_CELLn(uint16_t bitField)
     {
         set(0, 16, bitField);
     }

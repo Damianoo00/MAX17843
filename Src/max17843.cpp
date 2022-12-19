@@ -1,4 +1,3 @@
-#pragma once
 #include "../Inc/max17843.h"
 namespace max17843
 {
@@ -294,8 +293,7 @@ namespace max17843
     }
     Adctest2bRegister &Adctest2bRegister::Instance()
     {
-        static Adctest2bRegister _instance(0x5A
-        );
+        static Adctest2bRegister _instance(0x5A);
         return _instance;
     }
 }

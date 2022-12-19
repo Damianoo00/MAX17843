@@ -7,9 +7,9 @@ namespace max17843
     {
 
     public:
-        uint16_t iRegister;
-        uint8_t iAddress;
-        Register(const uint8_t address) : iAddress(address), iRegister(0) {}
+        uint16_t iRegister{0};
+        uint8_t iAddress{0};
+        Register(const uint8_t address) : iRegister(0), iAddress(address) {}
 
         void sendRegister();
         void reciveRegister();
