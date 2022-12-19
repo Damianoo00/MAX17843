@@ -6,7 +6,8 @@ namespace max17843
     class VersionRegister : public Register
     {
     public:
-        VersionRegister(const uint16_t address) : Register(address) {}
+        VersionRegister(const uint8_t address) : Register(address) {}
+        static VersionRegister &Instance();
 
         uint16_t get_VER();
         void set_VER(uint16_t);
@@ -18,7 +19,8 @@ namespace max17843
     class AddressRegister : public Register
     {
     public:
-        AddressRegister(const uint16_t address) : Register(address) {}
+        AddressRegister(const uint8_t address) : Register(address) {}
+        static AddressRegister &Instance();
 
         uint16_t get_AD();
         void set_AD(uint16_t);
@@ -30,7 +32,8 @@ namespace max17843
     class StatusRegister : public Register
     {
     public:
-        StatusRegister(const uint16_t address) : Register(address) {}
+        StatusRegister(const uint8_t address) : Register(address) {}
+        static StatusRegister &Instance();
 
         uint16_t get_ALRTFMEA1();
         void set_ALRTFMEA1(uint16_t);
@@ -75,7 +78,8 @@ namespace max17843
     class Fmea1Register : public Register
     {
     public:
-        Fmea1Register(const uint16_t address) : Register(address) {}
+        Fmea1Register(const uint8_t address) : Register(address) {}
+        static Fmea1Register &Instance();
 
         uint16_t get_ALRTGNDL1();
         void set_ALRTGNDL1(uint16_t);
@@ -126,7 +130,8 @@ namespace max17843
     class AlrtcellRegister : public Register
     {
     public:
-        AlrtcellRegister(const uint16_t address) : Register(address) {}
+        AlrtcellRegister(const uint8_t address) : Register(address) {}
+        static AlrtcellRegister &Instance();
 
         uint16_t get_ALRTCELL();
         void set_ALRTCELL(uint16_t);
@@ -141,7 +146,8 @@ namespace max17843
     class AlrtovcellRegister : public Register
     {
     public:
-        AlrtovcellRegister(const uint16_t address) : Register(address) {}
+        AlrtovcellRegister(const uint8_t address) : Register(address) {}
+        static AlrtovcellRegister &Instance();
 
         uint16_t get_ALRTOV();
         void set_ALRTOV(uint16_t);
@@ -156,7 +162,8 @@ namespace max17843
     class AlrtuvcellRegister : public Register
     {
     public:
-        AlrtuvcellRegister(const uint16_t address) : Register(address) {}
+        AlrtuvcellRegister(const uint8_t address) : Register(address) {}
+        static AlrtuvcellRegister &Instance();
 
         uint16_t get_ALRTUV();
         void set_ALRTUV(uint16_t);
@@ -171,7 +178,8 @@ namespace max17843
     class AlrtbalswRegister : public Register
     {
     public:
-        AlrtbalswRegister(const uint16_t address) : Register(address) {}
+        AlrtbalswRegister(const uint8_t address) : Register(address) {}
+        static AlrtbalswRegister &Instance();
 
         uint16_t get_ALRTBALSW();
         void set_ALRTBALSW(uint16_t);
@@ -180,7 +188,8 @@ namespace max17843
     class MinmaxcellRegister : public Register
     {
     public:
-        MinmaxcellRegister(const uint16_t address) : Register(address) {}
+        MinmaxcellRegister(const uint8_t address) : Register(address) {}
+        static MinmaxcellRegister &Instance();
 
         uint16_t get_MINCELL();
         void set_MINCELL(uint16_t);
@@ -192,7 +201,8 @@ namespace max17843
     class Fmea2Register : public Register
     {
     public:
-        Fmea2Register(const uint16_t address) : Register(address) {}
+        Fmea2Register(const uint8_t address) : Register(address) {}
+        static Fmea2Register &Instance();
 
         uint16_t get_ALRTHVOV();
         void set_ALRTHVOV(uint16_t);
@@ -204,7 +214,8 @@ namespace max17843
     class AutobalswdisRegister : public Register
     {
     public:
-        AutobalswdisRegister(const uint16_t address) : Register(address) {}
+        AutobalswdisRegister(const uint8_t address) : Register(address) {}
+        static AutobalswdisRegister &Instance();
 
         uint16_t get_CellRecoveryTime();
         void set_CellRecoveryTime(uint16_t);
@@ -216,7 +227,8 @@ namespace max17843
     class Id1Register : public Register
     {
     public:
-        Id1Register(const uint16_t address) : Register(address) {}
+        Id1Register(const uint8_t address) : Register(address) {}
+        static Id1Register &Instance();
 
         uint16_t get_DEVID();
         void set_DEVID(uint16_t);
@@ -225,7 +237,8 @@ namespace max17843
     class Id2Register : public Register
     {
     public:
-        Id2Register(const uint16_t address) : Register(address) {}
+        Id2Register(const uint8_t address) : Register(address) {}
+        static Id2Register &Instance();
 
         uint16_t get_DEVID();
         void set_DEVID(uint16_t);
@@ -237,7 +250,8 @@ namespace max17843
     class Devcfg1Register : public Register
     {
     public:
-        Devcfg1Register(const uint16_t address) : Register(address) {}
+        Devcfg1Register(const uint8_t address) : Register(address) {}
+        static Devcfg1Register &Instance();
 
         uint16_t get_SPOR();
         void set_SPOR(uint16_t);
@@ -282,7 +296,8 @@ namespace max17843
     class GpioRegister : public Register
     {
     public:
-        GpioRegister(const uint16_t address) : Register(address) {}
+        GpioRegister(const uint8_t address) : Register(address) {}
+        static GpioRegister &Instance();
 
         uint16_t get_DRV();
         void set_DRV(uint16_t);
@@ -300,7 +315,8 @@ namespace max17843
     class MeasureenRegister : public Register
     {
     public:
-        MeasureenRegister(const uint16_t address) : Register(address) {}
+        MeasureenRegister(const uint8_t address) : Register(address) {}
+        static MeasureenRegister &Instance();
 
         uint16_t get_CELLEN();
         void set_CELLEN(uint16_t);
@@ -321,7 +337,8 @@ namespace max17843
     class ScanctrlRegister : public Register
     {
     public:
-        ScanctrlRegister(const uint16_t address) : Register(address) {}
+        ScanctrlRegister(const uint8_t address) : Register(address) {}
+        static ScanctrlRegister &Instance();
 
         uint16_t get_SCAN();
         void set_SCAN(uint16_t);
@@ -363,7 +380,8 @@ namespace max17843
     class AlrtovenRegister : public Register
     {
     public:
-        AlrtovenRegister(const uint16_t address) : Register(address) {}
+        AlrtovenRegister(const uint8_t address) : Register(address) {}
+        static AlrtovenRegister &Instance();
 
         uint16_t get_OVALRTEN();
         void set_OVALRTEN(uint16_t);
@@ -378,7 +396,8 @@ namespace max17843
     class AlrtuvenRegister : public Register
     {
     public:
-        AlrtuvenRegister(const uint16_t address) : Register(address) {}
+        AlrtuvenRegister(const uint8_t address) : Register(address) {}
+        static AlrtuvenRegister &Instance();
 
         uint16_t get_UVALRTEN();
         void set_UVALRTEN(uint16_t);
@@ -393,7 +412,8 @@ namespace max17843
     class WatchdogRegister : public Register
     {
     public:
-        WatchdogRegister(const uint16_t address) : Register(address) {}
+        WatchdogRegister(const uint8_t address) : Register(address) {}
+        static WatchdogRegister &Instance();
 
         uint16_t get_CBTIMER();
         void set_CBTIMER(uint16_t);
@@ -405,7 +425,8 @@ namespace max17843
     class AcqcfgRegister : public Register
     {
     public:
-        AcqcfgRegister(const uint16_t address) : Register(address) {}
+        AcqcfgRegister(const uint8_t address) : Register(address) {}
+        static AcqcfgRegister &Instance();
 
         uint16_t get_AINTIME();
         void set_AINTIME(uint16_t);
@@ -417,7 +438,8 @@ namespace max17843
     class BalswenRegister : public Register
     {
     public:
-        BalswenRegister(const uint16_t address) : Register(address) {}
+        BalswenRegister(const uint8_t address) : Register(address) {}
+        static BalswenRegister &Instance();
 
         uint16_t get_BALSWEN();
         void set_BALSWEN(uint16_t);
@@ -426,7 +448,8 @@ namespace max17843
     class Devcfg2Register : public Register
     {
     public:
-        Devcfg2Register(const uint16_t address) : Register(address) {}
+        Devcfg2Register(const uint8_t address) : Register(address) {}
+        static Devcfg2Register &Instance();
 
         uint16_t get_TXUIDLEHIZ();
         void set_TXUIDLEHIZ(uint16_t);
@@ -444,7 +467,8 @@ namespace max17843
     class Baldiagcfg1Register : public Register
     {
     public:
-        Baldiagcfg1Register(const uint16_t address) : Register(address) {}
+        Baldiagcfg1Register(const uint8_t address) : Register(address) {}
+        static Baldiagcfg1Register &Instance();
 
         uint16_t get_CELLEN_M();
         void set_CELLEN_M(uint16_t);
@@ -459,7 +483,8 @@ namespace max17843
     class BalswdchgRegister : public Register
     {
     public:
-        BalswdchgRegister(const uint16_t address) : Register(address) {}
+        BalswdchgRegister(const uint8_t address) : Register(address) {}
+        static BalswdchgRegister &Instance();
 
         uint16_t get_DCHGTIME();
         void set_DCHGTIME(uint16_t);
@@ -474,7 +499,8 @@ namespace max17843
     class TopcellRegister : public Register
     {
     public:
-        TopcellRegister(const uint16_t address) : Register(address) {}
+        TopcellRegister(const uint8_t address) : Register(address) {}
+        static TopcellRegister &Instance();
 
         uint16_t get_TOPCELL();
         void set_TOPCELL(uint16_t);
@@ -483,7 +509,8 @@ namespace max17843
     class CellRegister1 : public Register
     {
     public:
-        CellRegister1(const uint16_t address) : Register(address) {}
+        CellRegister1(const uint8_t address) : Register(address) {}
+        static CellRegister1 &Instance();
 
         uint16_t get_CELLn();
         void set_CELLn(uint16_t);
@@ -492,73 +519,85 @@ namespace max17843
     class CellRegister2 : public CellRegister1
     {
     public:
-        CellRegister2(const uint16_t address) : CellRegister1(address) {}
+        CellRegister2(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister2 &Instance();
     };
 
     class CellRegister3 : public CellRegister1
     {
     public:
-        CellRegister3(const uint16_t address) : CellRegister1(address) {}
+        CellRegister3(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister3 &Instance();
     };
 
     class CellRegister4 : public CellRegister1
     {
     public:
-        CellRegister4(const uint16_t address) : CellRegister1(address) {}
+        CellRegister4(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister4 &Instance();
     };
 
     class CellRegister5 : public CellRegister1
     {
     public:
-        CellRegister5(const uint16_t address) : CellRegister1(address) {}
+        CellRegister5(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister5 &Instance();
     };
 
     class CellRegister6 : public CellRegister1
     {
     public:
-        CellRegister6(const uint16_t address) : CellRegister1(address) {}
+        CellRegister6(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister6 &Instance();
     };
 
     class CellRegister7 : public CellRegister1
     {
     public:
-        CellRegister7(const uint16_t address) : CellRegister1(address) {}
+        CellRegister7(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister7 &Instance();
     };
 
     class CellRegister8 : public CellRegister1
     {
     public:
-        CellRegister8(const uint16_t address) : CellRegister1(address) {}
+        CellRegister8(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister8 &Instance();
     };
 
     class CellRegister9 : public CellRegister1
     {
     public:
-        CellRegister9(const uint16_t address) : CellRegister1(address) {}
+        CellRegister9(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister9 &Instance();
     };
 
     class CellRegister10 : public CellRegister1
     {
     public:
-        CellRegister10(const uint16_t address) : CellRegister1(address) {}
+        CellRegister10(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister10 &Instance();
     };
 
     class CellRegister11 : public CellRegister1
     {
     public:
-        CellRegister11(const uint16_t address) : CellRegister1(address) {}
+        CellRegister11(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister11 &Instance();
     };
 
     class CellRegister12 : public CellRegister1
     {
     public:
-        CellRegister12(const uint16_t address) : CellRegister1(address) {}
+        CellRegister12(const uint8_t address) : CellRegister1(address) {}
+        static CellRegister12 &Instance();
     };
 
     class VblockRegister : public Register
     {
     public:
-        VblockRegister(const uint16_t address) : Register(address) {}
+        VblockRegister(const uint8_t address) : Register(address) {}
+        static VblockRegister &Instance();
 
         uint16_t get_VBLOCK();
         void set_VBLOCK(uint16_t);
@@ -567,7 +606,8 @@ namespace max17843
     class Ain1Register : public Register
     {
     public:
-        Ain1Register(const uint16_t address) : Register(address) {}
+        Ain1Register(const uint8_t address) : Register(address) {}
+        static Ain1Register &Instance();
 
         uint16_t get_AIN1();
         void set_AIN1(uint16_t);
@@ -576,7 +616,8 @@ namespace max17843
     class Ain2Register : public Register
     {
     public:
-        Ain2Register(const uint16_t address) : Register(address) {}
+        Ain2Register(const uint8_t address) : Register(address) {}
+        static Ain2Register &Instance();
 
         uint16_t get_AIN2();
         void set_AIN2(uint16_t);
@@ -585,7 +626,8 @@ namespace max17843
     class TotalRegister : public Register
     {
     public:
-        TotalRegister(const uint16_t address) : Register(address) {}
+        TotalRegister(const uint8_t address) : Register(address) {}
+        static TotalRegister &Instance();
 
         uint16_t get_SUM();
         void set_SUM(uint16_t);
@@ -594,7 +636,8 @@ namespace max17843
     class OvthclrRegister : public Register
     {
     public:
-        OvthclrRegister(const uint16_t address) : Register(address) {}
+        OvthclrRegister(const uint8_t address) : Register(address) {}
+        static OvthclrRegister &Instance();
 
         uint16_t get_OVTHCLR();
         void set_OVTHCLR(uint16_t);
@@ -603,7 +646,8 @@ namespace max17843
     class OvthsetRegister : public Register
     {
     public:
-        OvthsetRegister(const uint16_t address) : Register(address) {}
+        OvthsetRegister(const uint8_t address) : Register(address) {}
+        static OvthsetRegister &Instance();
 
         uint16_t get_OVTHSET();
         void set_OVTHSET(uint16_t);
@@ -612,7 +656,8 @@ namespace max17843
     class UvthclrRegister : public Register
     {
     public:
-        UvthclrRegister(const uint16_t address) : Register(address) {}
+        UvthclrRegister(const uint8_t address) : Register(address) {}
+        static UvthclrRegister &Instance();
 
         uint16_t get_UVTHCLR();
         void set_UVTHCLR(uint16_t);
@@ -621,7 +666,8 @@ namespace max17843
     class UvthsetRegister : public Register
     {
     public:
-        UvthsetRegister(const uint16_t address) : Register(address) {}
+        UvthsetRegister(const uint8_t address) : Register(address) {}
+        static UvthsetRegister &Instance();
 
         uint16_t get_UVTHSET();
         void set_UVTHSET(uint16_t);
@@ -630,7 +676,8 @@ namespace max17843
     class MsmtchRegister : public Register
     {
     public:
-        MsmtchRegister(const uint16_t address) : Register(address) {}
+        MsmtchRegister(const uint8_t address) : Register(address) {}
+        static MsmtchRegister &Instance();
 
         uint16_t get_MSMTCH();
         void set_MSMTCH(uint16_t);
@@ -639,7 +686,8 @@ namespace max17843
     class AinotRegister : public Register
     {
     public:
-        AinotRegister(const uint16_t address) : Register(address) {}
+        AinotRegister(const uint8_t address) : Register(address) {}
+        static AinotRegister &Instance();
 
         uint16_t get_AINOT();
         void set_AINOT(uint16_t);
@@ -648,7 +696,8 @@ namespace max17843
     class AinutRegister : public Register
     {
     public:
-        AinutRegister(const uint16_t address) : Register(address) {}
+        AinutRegister(const uint8_t address) : Register(address) {}
+        static AinutRegister &Instance();
 
         uint16_t get_AINUT();
         void set_AINUT(uint16_t);
@@ -657,7 +706,8 @@ namespace max17843
     class BalshrtthrRegister : public Register
     {
     public:
-        BalshrtthrRegister(const uint16_t address) : Register(address) {}
+        BalshrtthrRegister(const uint8_t address) : Register(address) {}
+        static BalshrtthrRegister &Instance();
 
         uint16_t get_BALSHRTTHR();
         void set_BALSHRTTHR(uint16_t);
@@ -666,7 +716,8 @@ namespace max17843
     class BallowthrRegister : public Register
     {
     public:
-        BallowthrRegister(const uint16_t address) : Register(address) {}
+        BallowthrRegister(const uint8_t address) : Register(address) {}
+        static BallowthrRegister &Instance();
 
         uint16_t get_BALLOWTHR();
         void set_BALLOWTHR(uint16_t);
@@ -675,7 +726,8 @@ namespace max17843
     class BalhighthrRegister : public Register
     {
     public:
-        BalhighthrRegister(const uint16_t address) : Register(address) {}
+        BalhighthrRegister(const uint8_t address) : Register(address) {}
+        static BalhighthrRegister &Instance();
 
         uint16_t get_BALHIGHTHR();
         void set_BALHIGHTHR(uint16_t);
@@ -684,7 +736,8 @@ namespace max17843
     class DiagRegister : public Register
     {
     public:
-        DiagRegister(const uint16_t address) : Register(address) {}
+        DiagRegister(const uint8_t address) : Register(address) {}
+        static DiagRegister &Instance();
 
         uint16_t get_DIAG();
         void set_DIAG(uint16_t);
@@ -693,7 +746,8 @@ namespace max17843
     class DiagcfgRegister : public Register
     {
     public:
-        DiagcfgRegister(const uint16_t address) : Register(address) {}
+        DiagcfgRegister(const uint8_t address) : Register(address) {}
+        static DiagcfgRegister &Instance();
 
         uint16_t get_DIAGSEL();
         void set_DIAGSEL(uint16_t);
@@ -723,7 +777,8 @@ namespace max17843
     class CtstenRegister : public Register
     {
     public:
-        CtstenRegister(const uint16_t address) : Register(address) {}
+        CtstenRegister(const uint8_t address) : Register(address) {}
+        static CtstenRegister &Instance();
 
         uint16_t get_CTSTEN();
         void set_CTSTEN(uint16_t);
@@ -732,7 +787,8 @@ namespace max17843
     class Adctest1aRegister : public Register
     {
     public:
-        Adctest1aRegister(const uint16_t address) : Register(address) {}
+        Adctest1aRegister(const uint8_t address) : Register(address) {}
+        static Adctest1aRegister &Instance();
 
         uint16_t get_ADCTEST1A();
         void set_ADCTEST1A(uint16_t);
@@ -741,7 +797,8 @@ namespace max17843
     class Adctest1bRegister : public Register
     {
     public:
-        Adctest1bRegister(const uint16_t address) : Register(address) {}
+        Adctest1bRegister(const uint8_t address) : Register(address) {}
+        static Adctest1bRegister &Instance();
 
         uint16_t get_ADCTEST1B();
         void set_ADCTEST1B(uint16_t);
@@ -750,7 +807,8 @@ namespace max17843
     class Adctest2aRegister : public Register
     {
     public:
-        Adctest2aRegister(const uint16_t address) : Register(address) {}
+        Adctest2aRegister(const uint8_t address) : Register(address) {}
+        static Adctest2aRegister &Instance();
 
         uint16_t get_ADCTEST2A();
         void set_ADCTEST2A(uint16_t);
@@ -759,7 +817,8 @@ namespace max17843
     class Adctest2bRegister : public Register
     {
     public:
-        Adctest2bRegister(const uint16_t address) : Register(address) {}
+        Adctest2bRegister(const uint8_t address) : Register(address) {}
+        static Adctest2bRegister &Instance();
 
         uint16_t get_ADCTEST2B();
         void set_ADCTEST2B(uint16_t);
