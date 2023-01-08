@@ -2,7 +2,6 @@
 #include <stdint.h>
 namespace max17843
 {
-
     class Register
     {
 
@@ -10,9 +9,6 @@ namespace max17843
         uint16_t iRegister{0};
         uint8_t iAddress{0};
         Register(const uint8_t address) : iRegister(0), iAddress(address) {}
-
-        void sendRegister();
-        void reciveRegister();
         static Register &Instance();
 
     protected:
