@@ -6,7 +6,7 @@ namespace max17843
     uint16_t Register::get(uint16_t startBit, uint16_t lengthBitSet)
     {
         const uint16_t mask = ((uint16_t)pow(2, lengthBitSet) - 1) << startBit;
-        return iRegister & mask >> startBit;
+        return (iRegister & mask) >> startBit;
     }
 
     void Register::set(uint16_t startBit, uint16_t lenghBitset, uint16_t val)
